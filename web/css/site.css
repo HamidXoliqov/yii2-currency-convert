@@ -1,0 +1,376 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+.sidebar {
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #333333;
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    margin: 15px 0;
+  }
+  
+  .sidebar .widget_search {
+    padding: 15px;
+  }
+  
+  .sidebar .widget_search h5 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .sidebar .widget_search .input-group-prepend {
+    height: 45px;
+  }
+  
+  .sidebar .widget_search .input-group-prepend .text-search {
+    -webkit-border-top-left-radius: 5px;
+            border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+    border: 0;
+    width: 80%;
+    padding-left: 5px;
+  }
+  
+  .sidebar .widget_search .input-group-prepend .submit-search {
+    -webkit-border-top-right-radius: 5px;
+            border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+    border: 0;
+    width: 20%;
+    background: url('../img/search-icon.png') center no-repeat #fff;
+    cursor: pointer;
+  }
+  
+  .sidebar .sidebar-title h3 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .sidebar .currency {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .sidebar .currency::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #ffffff;
+    margin: 15px auto 0 auto;
+  }
+  .sidebar .currency .currensy-row {
+    width: 100%;
+  }
+  .sidebar .currency .currensy-row .currensy-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px 0;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col img {
+    display: block;
+    margin: auto 10px auto 0;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 75%;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    text-transform: capitalize;
+    margin: 8px 0;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy .currensy-name {
+    margin-bottom: 0;
+    width: 30%;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy .currency-number {
+    color: #fff;
+    margin: 0 10px;
+    width: 30%;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy i {
+    color: #fff;
+    width: 20%;
+    -ms-align-self: center;
+    align-self: center;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy i::before {
+    margin-right: 5px;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy i.fa-caret-up {
+    color: #5dbf36;
+  }
+  
+  .sidebar .currency .currensy-row .currensy-col .currensy i.fa-caret-down {
+    color: #ec3129;
+  }
+  .sidebar .currency .currensy-row .currensy-col .currensy i span {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  }
+  
+  .sidebar .currency .converter-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding: 15px 0;
+  }
+  
+  .sidebar .currency .converter-row .converter-col {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .sidebar .currency .converter-row .converter-col input {
+    width: 35%;
+    text-align: right;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    background-color: #ffffff;
+    height: 45px;
+  }
+  
+  .sidebar .currency .converter-row .converter-col input::-webkit-input-placeholder {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+  }
+  
+  .sidebar .currency .converter-row .converter-col input::-moz-placeholder {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+  }
+  
+  .sidebar .currency .converter-row .converter-col input::-ms-input-placeholder {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+  }
+  
+  .sidebar .currency .converter-row .converter-col input::placeholder {
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+  }
+  
+  .sidebar .currency .converter-row .converter-col .form-group {
+    position: relative;
+    margin-bottom: 0;
+    width: 55%;
+    background: #ffffff;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+            height: 45px;
+  }
+  
+  .sidebar .currency .converter-row .converter-col .form-group select {
+    padding-left: 8px;
+    position: relative;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    height: 45px;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    color: #333333;
+    width: 100%;
+    -moz-appearance: none;
+    /* Firefox */
+    -webkit-appearance: none;
+    /* Safari and Chrome */
+    appearance: none;
+      cursor: pointer;
+  }
+  
+  .sidebar .currency .converter-row .converter-col .form-group::after {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f078";
+    position: absolute;
+    font-size: 25px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffc40c;
+    width: 45px;
+    height: 45px;
+    -webkit-border-top-right-radius: 5px;
+            border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+    text-align: center;
+    line-height: 1.9;
+  
+  }
+  .send-btn{
+    font-size: 16px;
+    color: #333333;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #ffc40c;
+    padding: 10.5px;
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    cursor: pointer;
+    text-decoration: none!important;
+    text-align: center;
+}
